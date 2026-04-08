@@ -25,14 +25,15 @@
 
         .flex-puzzle-container {
             display: flex;
-            flex-wrap: wrap;
-            width: 600px;
+            flex-wrap: wrap; 
+            width: 450px;
+            line-height: 0;
         }
 
         .flex-puzzle-container img {
-            width: 200px;
-            height: auto;
-            display: block;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
         }
 
         .faulty-piece {
@@ -58,6 +59,7 @@
             <img src="puzzle3_G.jpg" alt="7">
             <img src="puzzle3_I.jpg" alt="8">
             <img src="puzzle3_J.jpg" alt="9">
+            
             <img src="FaultyPiece.jpg" alt="Faulty" class="faulty-piece">
         </div>
     </main>
