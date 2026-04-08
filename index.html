@@ -9,7 +9,6 @@
             display: grid;
             grid-template-rows: auto 1fr auto;
             min-height: 100vh;
-            gap: 20px;
         }
 
         header, footer {
@@ -22,20 +21,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
         }
 
         .flex-puzzle-container {
             display: flex;
             flex-wrap: wrap;
             width: 600px;
-            border: 2px solid #333;
         }
 
         .flex-puzzle-container img {
-            display: block;
             width: 200px;
             height: auto;
+            display: block;
         }
 
         .faulty-piece {
@@ -51,7 +48,7 @@
     </header>
 
     <main class="puzzle-section">
-        <div class="puzzle-container">
+        <div class="flex-puzzle-container">
             <img src="puzzle3_A.jpg" alt="1">
             <img src="puzzle3_B.jpg" alt="2">
             <img src="puzzle3_C.jpg" alt="3">
@@ -61,7 +58,6 @@
             <img src="puzzle3_G.jpg" alt="7">
             <img src="puzzle3_I.jpg" alt="8">
             <img src="puzzle3_J.jpg" alt="9">
-
             <img src="FaultyPiece.jpg" alt="Faulty" class="faulty-piece">
         </div>
     </main>
