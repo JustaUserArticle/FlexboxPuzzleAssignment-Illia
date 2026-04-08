@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Puzzle Assignment</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            gap: 20px;
+        }
+
+        header, footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .puzzle-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .flex-puzzle-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            border: 2px solid #333;
+        }
+
+        .flex-puzzle-container img {
+            display: block;
+            width: 200px;
+            height: auto;
+        }
+
+        .faulty-piece {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Illia Zeidel</h1>
+        <h2>Fish</h2>
+    </header>
+
+    <main class="puzzle-section">
+        <div class="puzzle-container">
+            <img src="puzzle3_A.jpg" alt="1">
+            <img src="puzzle3_B.jpg" alt="2">
+            <img src="puzzle3_C.jpg" alt="3">
+            <img src="puzzle3_D.jpg" alt="4">
+            <img src="puzzle3_E.jpg" alt="5">
+            <img src="puzzle3_F.jpg" alt="6">
+            <img src="puzzle3_G.jpg" alt="7">
+            <img src="puzzle3_I.jpg" alt="8">
+            <img src="puzzle3_J.jpg" alt="9">
+
+            <img src="FaultyPiece.jpg" alt="Faulty" class="faulty-piece">
+        </div>
+    </main>
+
+    <footer>
+        <p>Date 8th of March 2026</p>
+    </footer>
+
+</body>
+</html>
